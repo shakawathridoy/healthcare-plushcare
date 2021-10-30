@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import logo from '../../../image/plushCare.png'
@@ -14,24 +15,29 @@ const Menubar = () => {
                     <div className="row">
                         <div className="col-md-2">
                             <div className="logo-img text-center">
+                                <Link to="/home">
                                 <img src={logo} alt="" />
+                                </Link>
                             </div>
                         </div>
                         <div className="col-md-10">
                             <div className="menu-items">
-                                <ul className="d-flex justify-content-end me-5">
-                                    <Link to="/home" className="items">
+                                <div className ="collapse navbar-collapse d-flex justify-content-end me-5" id ="colNav">
+                                <nav className ="navbar navbar-expand-xl  ">
+                                <Link to="/home" className="items">
                                         <li>Home</li>
                                     </Link>
                                     <Link to="/service" className="items">
                                         <li>Service</li>
                                     </Link>
-                                    <Link to="/contact" className="items">
-                                        <li>Contact</li>
+                                    <Link to="/appoinment" className="items">
+                                        <li>Appoinment</li>
                                     </Link>
                                     <Link to="/about" className="items">
                                         <li>About</li>
                                     </Link>
+                                
+                                    </nav>
                                     {
                                         user.email?
                                         
@@ -41,9 +47,9 @@ const Menubar = () => {
                                     <button className="singin-button mt-1 ms-2">Sing In</button>                                    
                                     </Link>
                                     } 
+                                    <p className="mt-4 ms-3">{user.displayName}</p>
                                     
-                                    
-                                </ul>
+                                    </div>
                             </div>
                         </div>
                     </div>

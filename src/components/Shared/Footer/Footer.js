@@ -8,6 +8,7 @@ import {
   faTwitterSquare,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -49,11 +50,21 @@ const Footer = () => {
             <div className="col-md-2">
               <div className="footer-menu-container">
                 <ul>
-                  <li className="footer-menu">Home</li>
+                  <Link to="/home">
+                  <li className="footer-menu ">Home</li>
+                  </Link>
+                  <Link to="/service">
                   <li className="footer-menu">Services</li>
-                  <li className="footer-menu">portfolio</li>
-                  <li className="footer-menu">Contact us</li>
-                  <li className="footer-menu"> About us</li>
+                  </Link>
+                  <Link to="/appoinment">
+                  <li className="footer-menu">Appoinmets</li>
+                  </Link>
+                  <Link to="/contact">
+                  <li className="footer-menu">Contact</li>
+                  </Link>
+                  <Link to="/about">
+                  <li className="footer-menu"> About</li>
+                  </Link>
                 </ul>
               </div>
             </div>

@@ -5,7 +5,7 @@ import './SingUp.css';
 
 const SingUp = () => {
 
-    const {singInWithGoogle, createAccountWithGoogle,  setUser, setIsLoading} = useAuth();
+    const {singInWithGoogle, createAccountWithGoogle,  setUser, setIsLoading, updateName} = useAuth();
 
     const history = useHistory()
     const location = useLocation()
@@ -23,6 +23,7 @@ const SingUp = () => {
         createAccountWithGoogle(email, password)
         .then((res) => {
             setIsLoading(true)
+            updateName(name)
             setUser(res.user);
             history.push(url);
         

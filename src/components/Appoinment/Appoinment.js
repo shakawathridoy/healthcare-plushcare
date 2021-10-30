@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import './Appoinment.css'
 
 const Appoinment = () => {
@@ -22,9 +23,45 @@ const Appoinment = () => {
 
     return (
         <div>
-            <h1>this is Appoinment page {id}</h1>
-            <h2>Name: {specificAppoinment?.name}</h2>
-           
+            <Link to="/home">
+            <h4 className="text-center mt-4"><button className="button">Doctors</button></h4>
+            </Link>
+            <h4 className="text-warning text-center mt-4">Click Here For Find your doctor!</h4>
+            
+            <div className="container body rounded mt-5 mb-5 ">
+    <div className="row">
+        <div className="col-md-4 border-right">
+            <div className="d-flex flex-column align-items-center text-center p-3 py-5"><img className="rounded-circle mt-5" src={specificAppoinment?.img} width="90"/><span className="font-weight-bold">Name: {specificAppoinment?.name}</span><span className="text-black-50">Consultation Fees: ${specificAppoinment?.fee}</span><span>Catagory: {specificAppoinment?.genres}</span></div>
+        </div>
+        <div className="col-md-8">
+            <div className="p-3 py-5">
+                <div className="d-flex justify-content-between align-items-center mb-3">
+                    <div className="d-flex flex-row align-items-center back"><i className="fa fa-long-arrow-left mr-1 mb-1"></i>
+                        <h6>Back to home</h6>
+                    </div>
+                    <h6 className="text-right">Edit Profile</h6>
+                </div>
+                <div className="row mt-2">
+                    <div className="col-md-6"><input type="text" className="form-control" placeholder="first name" /></div>
+                    <div className="col-md-6"><input type="text" className="form-control" placeholder="Doe"/></div>
+                </div>
+                <div className="row mt-3">
+                    <div className="col-md-6"><input type="text" className="form-control" placeholder="Email" /></div>
+                    <div className="col-md-6"><input type="text" className="form-control" placeholder="Phone number"/></div>
+                </div>
+                <div className="row mt-3">
+                    <div className="col-md-6"><input type="text" className="form-control" placeholder="address"/></div>
+                    <div className="col-md-6"><input type="text" className="form-control" placeholder="Country"/></div>
+                </div>
+                <div className="row mt-3">
+                    <div className="col-md-6"><input type="text" className="form-control" placeholder="Bank Name" /></div>
+                    <div className="col-md-6"><input type="text" className="form-control" placeholder="Account Number"/></div>
+                </div>
+                <div className="mt-5 text-right"><button className="btn btn-primary profile-button" type="button">Save Profile</button></div>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     );
 };

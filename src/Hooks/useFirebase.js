@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
-import {getAuth, GoogleAuthProvider, signOut, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithPopup} from 'firebase/auth'
+import {getAuth, GoogleAuthProvider, signOut, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithPopup, updateProfile} from 'firebase/auth'
 
 initializeAuthentication()
 
@@ -13,7 +13,6 @@ const useFirebase = () => {
 
     useEffect(() =>{
         const unsubscribe = onAuthStateChanged(auth , (user)=> {
-           console.log(user);
              if(user){
                   
                  setUser(user)
@@ -32,7 +31,7 @@ const useFirebase = () => {
   
 }
 
-const createAccountWithGoogle = (email, password) => {
+const createAccountWithGoogle = ( email, password) => {
    return createUserWithEmailAndPassword(auth, email, password)
   
 }
@@ -41,11 +40,25 @@ const singInWithEmailPassword = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password)
 }
 
+const updateName = (name) => {
+    updateProfile(auth.currentUser, {
+        displayName: name
+      }).then(() => {
+        const newUser={...user, displayName: name} 
+       setUser(newUser)
+        
+        
+      }).catch((error) => {
+        
+      });
+    }
+
+    
 const logOut=()=> {
    signOut(auth).then(() => {
        setUser({})
      }).catch((error) => {
-       // An error happened.
+       
      });
 }
 
@@ -58,7 +71,8 @@ const logOut=()=> {
         singInWithEmailPassword,
         isLoading,
         setIsLoading,
-        logOut
+        logOut,
+        updateName
     }
 };
 
