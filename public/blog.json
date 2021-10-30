@@ -1,0 +1,61 @@
+[
+    {
+        "key": "B001RL8IYK",
+        "id":"1",
+        "title":"Mental Health Medication",
+        "genres":"Mental Health",
+        "star": "4",
+        "instructor": "Shakawat Hridoy",
+        "details": "A board-certified doctor at PlushCare can work with you to diagnose and treat your mental health condition with medication.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/09/docMental.png"
+    },
+    {
+        "key": "B002RL8IYK",
+        "id":"2",
+        "title":"Online Therapy",
+        "genres":"Internal Medicine",
+        "star": "4",
+        "instructor": "Shakawat Hridoy",
+        "details": "Our licensed therapists provide you with on-going emotional support and the opportunity to develop and grow. Our therapy program is for individuals over 18 years old.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/09/appMental.png"
+    },
+    {
+        "key": "B003RL8IYK",
+        "id":"3",
+        "title":"Primary Care Physicians",
+        "genres":"Physicians",
+        "star": "4",
+        "instructor": "Shakawat Hridoy",
+        "details": "Our primary care physicians look after your body and mind. Monitoring your mental health progress and taking care of your general health needs.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/09/trustMental.png"
+    },
+    {
+        "key": "B004RL8IYK",
+        "id":"4",
+        "title":"Dedicated talk therapists",
+        "genres":"Phycology",
+        "star": "4",
+        "instructor": "Shakawat Hridoy",
+        "details": "Our therapists are highly trained to provide virtual support for individuals dealing with all types of conditions ranging from anxiety and depression to life transitions, stress, and loss.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/09/docMental.png"
+    },
+    {
+        "key": "B005RL8IYK",
+        "id":"5",
+        "title":"Consistent care for lasting results",
+        "genres":"Marketplace Knowledge",
+        "star": "5",
+        "instructor": "Shakawat Hridoy",
+        "details": "Meet with your dedicated online therapist for 45 minutes for $119/session and $20 discount for weekly sessions. You’ll also get access to our care team.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/09/mindMental.png"
+    },
+    {
+        "key": "B006RL8IYK",
+        "id":"6",
+        "title":"Comprehensive mental healthcare",
+        "star": "4",
+        "instructor": "Shakawat Hridoy",
+        "details": "Along with therapy, you’ll have access to our network of primary care physicians who can work with you to prescribe medication and other health services.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/09/trustMental.png"
+    }
+]

@@ -1,0 +1,96 @@
+[
+    {
+        "key": "B001RL8IYK",
+        "id":"1",
+        "name":"Adonis Saremi, M.D.",
+        "genres":"Physiology",
+        "star": "4",
+        "fee": 15,
+        "details": "Dr. Adonis Saremi completed his Master’s Degree (MS) in Applied Physiology and Medical Doctorate (MD) at the Chicago Medical School. He subsequently completed residency training in Internal Medicine at the University of California, San Diego Medical Center. When he’s not working, he enjoys time with his family and the outdoors.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/02/Bio-pic.png"
+    },
+    {
+        "key": "B002RL8IYK",
+        "id":"2",
+        "name":"Allan Marks, M.D.",
+        "genres":"Dentistry",
+        "star": "4",
+        "fee": 20,
+
+        "details": "Dr. Allan Marks graduated from the University of Rochester School of Medicine and Dentistry in 1980 and completed residency at Stanford University Medical Center. When he’s not working, he enjoys playing tennis, hiking, and spending time with his wife and their three children.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/02/circle-cropped.png"
+    },
+    {
+        "key": "B003RL8IYK",
+        "id":"3",
+        "name":"Allison Lovell, M.D.",
+        "genres":"Internal Medicine",
+        "star": "4",
+        "fee": 30,
+        "details": "Dr. Allison Lovell completed her residency at Yale in 1988 and then obtained her Board Certification in Internal Medicine. Dr. Lovell has worked with many different people from all walks of life and cares for everyone with compassion and concern.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/02/circle-cropped-3.png"
+    },
+    {
+        "key": "B004RL8IYK",
+        "id":"4",
+        "name":"Benjamin Bowling, M.D.",
+        "genres":"Internal Medicine",
+        "star": "4",
+        "fee": 20,
+        "details": "Dr. Bowling earned his M.D. in 2008 from the Yale University School of Medicine. He completed his residency in Internal Medicine at the NYU School of Medicine in 2011. He is board-certified in Internal Medicine. In addition to practicing medicine.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/02/Ben1-circle-1.png"
+    },
+    {
+        "key": "B005RL8IYK",
+        "id":"5",
+        "name":"Nithya Agrawal, M.D.",
+        "genres":"Internal Medicine",
+        "star": "5",
+        "fee": 10,
+        "details": "Dr. Agrawal completed her residency at Tufts University’s Carney Hospital and completed her internship at University of Alabama. Dr. Agrawal has two young children who keep her entertained and busy when she is not working.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/02/circle-cropped-18.png"
+    },
+    {
+        "key": "B006RL8IYK",
+        "id":"6",
+        "name":"Carrie Beaumont, M.D.",
+        "genres":"Internal Medicine",
+        "star": "4",
+        "fee": 15,
+        "details": "Dr. Carrie Beaumont attended medical school at the University of North Carolina at Chapel Hill. She completed her residency at Wake Forest University. When not seeing patients or teaching, she enjoys traveling with her husband, and spending time with their miniature dachshund, Ziggy.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/02/circle-cropped-6.png"
+    },
+    {
+        "key": "B007RL8IYK",
+        "id":"7",
+        "name":"Cesar Duque Gomez, M.D.",
+        "genres":"Physiology",
+        "star": "4",
+        "fee": 25,
+        "details": "Dr. Duque received his M.D. from University of Wisconsin School of Medicine in 2005 and went on to complete his residency at Scripps/Mercy Hospital in San Diego. Prior to that, Dr. Duque served four years in the US Air Force as a Medical Laboratory Technician.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/02/circle-cropped-7.png"
+    },
+    {
+        "key": "B008RL8IYK",
+        "id":"8",
+        "name":"Tina Wu, M.D.",
+        "genres":"internal medicine",
+        "star": "4",
+        "fee": 30,
+        "details": "Dr. Tina Wu is a graduate of Johns Hopkins University and The University of Michigan Medical School, class of 2000. She completed her internal medicine residency at California Pacific Medical Center, a UCSF hospital. She speaks conversational Mandarin.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/02/Dr.-Tina-Wu-photo-circle.png"
+    },
+
+    {
+        "key": "B009RL8IYK",
+        "id":"9",
+        "name":"Cristina Garcia, M.D.",
+        "genres":"Family Medicine",
+        "star": "4",
+        "fee": 10,
+        "details": "Dr. Garcia attended UCSF for her medical degree and graduated in 2011. She went on to do her internship and residency at White Memorial Medical Center in Family Medicine and was awarded the Community Medicine Award upon her graduation. She has volunteered giving medical aid in Honduras and Argentina.",
+        "img":"https://plushcare.com/wp-content/uploads/2020/02/circle-cropped-9.png"
+    }
+    
+    
+]

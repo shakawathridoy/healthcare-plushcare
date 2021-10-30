@@ -1,0 +1,26 @@
+.items{
+    list-style: none;
+    margin: 5px;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: #283779;
+}
+
+.logo-img img{
+    width: 230px;
+    padding: 8px;
+
+}
+.singin-button {
+    background-color: #283779;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+    transition-duration: .5s;
+}
+
+.singin-button:hover {
+    background-color: white;
+    color: #283779;
+}
