@@ -10,9 +10,10 @@ const SingUp = () => {
     const history = useHistory()
     const location = useLocation()
 
-    const [name, setName] = useState();
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("")
 
     const handleGetName = (e) => {
         
@@ -20,6 +21,10 @@ const SingUp = () => {
     }
     const handleRegister = (e) => {
         e.preventDefault()
+        if(password.length < 8){
+            setError('Password must be at least 8 caracters')
+            return;
+          }
         createAccountWithGoogle(email, password)
         .then((res) => {
             setIsLoading(true)
@@ -90,7 +95,9 @@ const handleGetPassword = (e) => {
                 <br />
                 <h6 style={{marginRight: '320px'}}>Password</h6>
                 <input onBlur={handleGetPassword} type="password" placeholder="***********" />
-               <br /><br />
+               <br />
+               <small className="text-danger">{error}</small>
+               <br />
                    <small>By clicking "Continue", you are agreeing to the PlushCare Terms of Use, Privacy Policy and Telehealth Consent Policy.</small><br /><br />
                    <input className=" button-click " type="submit" value="Continue" />
                </form>
